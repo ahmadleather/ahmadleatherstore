@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmad Leather Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ahmad Leather Store</h1>
+        <p>High-Quality Custom Leather Products</p>
+    </header>
+
+    <section class="products">
+
+        <div class="product">
+            <img src="images/jacket1.jpg" alt="Leather Jacket">
+            <h2>Leather Jacket</h2>
+            <p>Premium leather jacket, made to order. Custom sizes available.</p>
+            <a href="https://wa.me/9230015409?text=Hello%20Ahmad%20bhai,%20I%20want%20to%20order%20a%20leather%20jacket." target="_blank" class="whatsapp-button">Order via WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="images/gloves1.jpg" alt="Gloves">
+            <h2>Motorbike Gloves</h2>
+            <p>Durable, comfortable gloves for professional bikers.</p>
+            <a href="https://wa.me/923080154098?text=Hello%20Ahmad%20bhai,%20I%20want%20to%20order%20motorbike%20gloves." target="_blank" class="whatsapp-button">Order via WhatsApp</a>
+        </div>
+
+        <div class="product">
+            <img src="images/shoes1.jpg" alt="Shoes">
+            <h2>Leather Shoes</h2>
+            <p>Stylish handmade shoes for all occasions.</p>
+            <a href="https://wa.me/923080154098?text=Hello%20Ahmad%20bhai,%20I%20want%20to%20order%20leather%20shoes." target="_blank" class="whatsapp-button">Order via WhatsApp</a>
+        </div>
+ <div class="product">
+            <img src="images/motorbikesuit1.jpg" alt="Motorbike Suit">
+            <h2>Motorbike Suit</h2>
+            <p>Motorbike Suit, made to order. Custom sizes available.</p>
+            <a href="https://wa.me/923080154098?text=Hello%20Ahmad%20bhai,%20I%20want%20to%20order%20a%20leather%20jacket." target="_blank" class="whatsapp-button">Order via WhatsApp</a>
+        </div>
+         <div class="product">
+            <img src="images/motorbikeshoes1.jpg" alt="Motorbike Shoes">
+            <h2>Motorbike Shoes</h2>
+            <p>Motorbike Shoes, made to order. Custom sizes available.</p>
+            <a href="https://wa.me/923080154098?text=Hello%20Ahmad%20bhai,%20I%20want%20to%20order%20a%20leather%20jacket." target="_blank" class="whatsapp-button">Order via WhatsApp</a>
+        </div>
+        </div>
+         <div class="product">
+            <img src="images/Leatherwallet1.jpg" alt="Leather wallet">
+            <h2>Motorbike Shoes</h2>
+            <p>Leather wallet, made to order. Custom sizes available.</p>
+            <a href="https://wa.me/92308015409?text=Hello%20Ahmad%20bhai,%20I%20want%20to%20order%20a%20leather%20jacket." target="_blank" class="whatsapp-button">Order via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- ✅ Order Form -->
+    <section class="order-form">
+        <h2>Place Your Custom Order</h2>
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="phone" placeholder="Your Mobile Number" required>
+            <input type="text" id="product" placeholder="Product Name" required>
+            <textarea id="address" placeholder="Delivery Address" required></textarea>
+            <button type="submit">Send Order via WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact on WhatsApp: <strong>+92 3080154098</strong></p>
+    </footer>
+
+    <!-- ✅ Script for WhatsApp message -->
+    <script>
+        document.getElementById("orderForm").addEventListener("submit", function(e){
+            e.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var product = document.getElementById("product").value;
+            var address = document.getElementById("address").value;
+
+            var message = `Assalamualaikum Ahmad bhai,%0AMy Name: ${name}%0AMobile: ${phone}%0AI want to order: ${product}%0ADelivery Address: ${address}`;
+            var url = `https://wa.me/923095449327?text=${message}`;
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>
+<!-- ✅ About Section -->
+<section class="info-section">
+    <h2>About Ahmad Leather Store</h2>
+    <p>
+        Ahmad Leather Store is a trusted manufacturer of custom leather jackets, motorbike suits, gloves, shoes, jeans, and more. We specialize in high-quality leather products made on order with perfect fitting and style.
+    </p>
+</section>
+
+<!-- ✅ Privacy Policy Section -->
+<section class="info-section">
+    <h2>Privacy Policy</h2>
+    <p>
+        We respect your privacy. All customer information, such as name, phone number, and address, is kept secure and used only to complete your order. We never share your data with third parties.
+    </p>
+</section>
+
+<!-- ✅ Contact via Gmail -->
+<section class="info-section">
+    <h2>Contact via Email</h2>
+    <p>
+        If you prefer email, feel free to contact us at:  
+        <strong><a href="mailto:muhammadahamd78692000@gmail.com">muhammadahamd78692000@gmail.com</a></strong>
+    </p>
+</section>
